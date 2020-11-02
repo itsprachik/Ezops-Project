@@ -1,0 +1,25 @@
+
+1. Creating and populating tables Employee and Department as shown is dump.sql
+
+
+2. Average employee salary for each city
+
+select avg(Employee.Salary), Department.City 
+from Employee left join Department on Employee.DeptID = Department.DeptID 
+group by Department.City; 
+
+
+//result
++----------------------+------+
+| avg(Employee.Salary) | City |
++----------------------+------+
+|           63214.2857 | SF   |
+|           54250.0000 | NYC  |
+|           58750.0000 | CHI  |
+|           74000.0000 | DTX  |
++----------------------+------+
+4 rows in set (0.02 sec)
+
+3. Current date and time on the server
+
+mysql> select current_timestamp();

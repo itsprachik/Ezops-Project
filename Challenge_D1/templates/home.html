@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+	<title>Ezops HOME Project</title>
+</head>
+<body>
+
+
+<div class="flex">
+  <form action="aboutus.html" class="flex-item">
+    <div class="button_cont" align="center"><a class="example_c" href="{{url_for('reverse')}}"  rel="nofollow noopener">REVERSE</a></div>
+  </form>
+
+  <form action="end.html" class="flex-item">
+    <div class="button_cont" align="center"><a class="example_c" href="{{url_for('alternate')}}"  rel="nofollow noopener">ALTERNATE</a></div>
+  </form>
+    <form action="end.html" class="flex-item">
+    <div class="button_cont" align="center"><a class="example_c" href="{{url_for('alpha')}}"  rel="nofollow noopener">API</a></div>
+  </form>
+</div>
+
+</body>
+
+
+{% endblock content %}

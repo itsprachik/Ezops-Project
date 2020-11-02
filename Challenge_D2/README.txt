@@ -1,0 +1,2 @@
+I have since deleted my CENTOS 7 server but I still have the docker file that I created to deploy my flask application. 
+You can take a look at the Docker file and I will deploy it on AWS if you require me to!

@@ -1,0 +1,28 @@
+
+ 
+
+
+  insert into Employee (Name,DeptID,Salary) values 
+  ('John',2,45000),
+  ('Amanda',1,70000),
+  ('Mark',3,40000),
+  ('Sarah',1,75000),
+  ('Jim',3,60000),
+  ('Pam',2,42000),
+  ('Oscar',5,43000),
+  ('Kevin',5,37500),
+  ('Angela',5,50000),
+  ('Andy',3,60000),
+  ('Toby',2,50000),
+  ('Daryl',4,67000),
+  ('Meredith',4,70000),
+  ('Dwight',3,75000),
+  ('Michael',4,90000),
+  ('Jan',2,80000),
+  ('Sadiq',1,85000),
+  ('Nick',1,82000),
+  ('Ryan',4,71000),
+  ('Kelly',4,72000)
+
+
+select avg(Employee.Salary), Department.City from Employee left join Department on Employee.DeptID = Department.DeptID group by Department.City; 
